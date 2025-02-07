@@ -144,7 +144,7 @@ body {
     font-size: var(--fz-8xl);
     font-weight: 700;
     color: var(--secondary-clr);
-    line-height: 110px;
+    line-height: 120%;
 }
 
 .hero h1 span{
@@ -200,7 +200,6 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap-reverse;
     gap: 40px;
 }
 
@@ -248,4 +247,63 @@ body {
 .advantage-text {
     margin-top: 10px;
     color: var(--secondary-clr);
+}
+
+
+@media screen and (max-width: 1200px) {
+    .about-content {
+        flex-direction: column-reverse;
+    }
+
+    .advantages {
+        max-width: 100%;
+        justify-content: center;
+    }
+
+    .about-img {
+        max-width: 100%;
+        min-width: 100%;
+        height: 500px;
+    }
+    .about-img img {
+        min-width: 100%;
+        object-position: 50% 20%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    :root {
+        --fz-8xl: 48px;
+    }
+
+
+.hero .container {
+    max-width: 700px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    :root {
+        --fz-8xl: 40px;
+        --fz-5xl: 32px;
+        --fz-2xl: 20px;
+        --fz-base: 16px;
+
+        --section-offset: 60px;
+    }
+
+    .about-content {
+        margin-top: 30px;
+    }
+    .about-img {
+        height: 320px;
+    }
+    .advantages {
+        gap: 30px;
+    }
+    .advantage {
+        max-width: 260px;
+    }
+    
 }
