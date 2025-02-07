@@ -1,6 +1,7 @@
 :root {
     --main-clr: #111E4C;
     --accent-clr:#009DFF;
+    --accent-clr-15: rgba(0, 157, 255, 0.15);
     --secondary-clr: #A8B7E7;
     --dark-clr: #000826;
     --light-clr: #fff;
@@ -37,6 +38,12 @@ button {
     border: none;
     outline: none;
     cursor: pointer;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: cover;
 }
 
 html {
@@ -157,4 +164,88 @@ body {
     background-color: #0E3167;
     margin-right: auto;
     margin-left: auto;
+}
+
+/* ======== About ======== */
+
+.about {
+    margin-top: var(--section-offset);
+}
+
+.about-title {
+    font-size: var(--fz-5xl);
+    font-weight: bold;
+    color: var(--main-clr);
+}
+
+.about-text {
+    font-size: var(--fz-2xl);
+    color: var(--secondary-clr);
+}
+
+.about-text span {
+    color: var(--main-clr);
+}
+
+.about-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 40px;
+}
+
+.about-content {
+    margin-top: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap-reverse;
+    gap: 40px;
+}
+
+.about-img {
+    max-width: 680px;
+    min-width: 480px;
+}
+
+.about-img img {
+    border-radius: 50px;
+}
+
+.advantages {
+    /* display: grid;
+    grid-template-columns: minmax(220px, 260px) minmax(220px, 260px); */
+    display: flex;
+    flex-wrap: wrap;
+    gap: 60px 80px;
+
+    max-width: 600px;
+}
+
+
+.advantage {
+    max-width: 260px;
+}
+
+.advantage-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--accent-clr-15);
+    width: 66px;
+    height: 66px;
+    border-radius: 14px;
+}
+
+.advantage-title {
+    margin-top: 22px;
+    font-size: var(--fz-2xl);
+    font-weight: bold;
+    color: var(--main-clr);
+}
+
+.advantage-text {
+    margin-top: 10px;
+    color: var(--secondary-clr);
 }
