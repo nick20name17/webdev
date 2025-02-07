@@ -1,0 +1,160 @@
+:root {
+    --main-clr: #111E4C;
+    --accent-clr:#009DFF;
+    --secondary-clr: #A8B7E7;
+    --dark-clr: #000826;
+    --light-clr: #fff;
+
+    --fz-8xl: 90px;
+    --fz-5xl: 48px;
+    --fz-2xl: 24px;
+    --fz-xl: 20px;
+    --fz-base: 17px;
+
+    --section-offset: 120px;
+    --content-width: 1360px;
+    --context-offset-x: 16px;
+
+    --header-height: 80px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+}
+
+button {
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+html {
+    font-size: var(--fz-base);
+}
+
+body {
+    font-family: "Poppins", serif;
+    text-transform: lowercase;
+}
+
+.container {
+    max-width: var(--content-width);
+    margin: 0 auto;
+    padding: 0 var(--context-offset-x);
+}
+
+.btn {
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: var(--fz-2xl);
+    color: var(--accent-clr);
+    background-color: #D9F0FF;
+    min-width: 240px;
+    border-radius: 15px;
+    transition: filter 0.3s ease;
+}
+
+.btn:hover {
+    filter: brightness(1.15);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    column-gap: 11px;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}
+
+.logo span {
+    font-size: var(--fz-xl);
+    font-weight: 500;
+    color: var(--secondary-clr);
+    text-transform: none;
+}
+
+.header {
+    height: var(--header-height);
+    padding: 20px 0;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav-list {
+    display: flex;
+    align-items: center;
+    column-gap: 50px;
+}
+
+.nav-link {
+    color: var(--secondary-clr);
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: var(--accent-clr);
+}
+
+/* ======== Hero ======== */
+
+.hero {
+    background-color: var(--main-clr);
+    height: calc(100vh - var(--header-height));
+    max-height: 1400px;
+    text-align: center;
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.hero .container {
+    max-width: 1300px;
+}
+
+.hero h1 {
+    font-size: var(--fz-8xl);
+    font-weight: 700;
+    color: var(--secondary-clr);
+    line-height: 110px;
+}
+
+.hero h1 span{
+    color: var(--accent-clr);
+}
+
+.hero p {
+    margin-top: 40px;
+    color: var(--secondary-clr);
+    margin-right: auto;
+    margin-left: auto;
+    max-width: 580px;
+}
+
+.hero .btn {
+    margin-top: 40px;
+    background-color: #0E3167;
+    margin-right: auto;
+    margin-left: auto;
+}
